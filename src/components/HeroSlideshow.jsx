@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { Link } from "react-router-dom";
 
 const images = [
   'https://images.ctfassets.net/ypfe9l9zihcg/4W1Dgfj6QECIq4Oey0IQMi/4c044358096870a234a1ecd5f84f5d39/Forest-Hills-what-to-expect-1.jpg',
@@ -45,15 +46,15 @@ export default function HeroSlideshow() {
           <div className="absolute inset-0 z-30 flex flex-col items-center justify-center text-white text-center px-4">
             <h1 className="text-3xl sm:text-5xl md:text-6xl font-bold mb-4 drop-shadow-lg">Welcome to Where2Go!</h1>
             <p className="text-base sm:text-lg md:text-2xl mb-8 drop-shadow">Your solution to finding the nearest restroom when you need it most.</p>
-            <a
-              href="/finder"
+            <Link
+              to="/finder"
               className="bg-[#72b8f0] hover:bg-[#5ba7e4] text-white font-bold py-3 px-8 rounded-lg text-lg md:text-xl shadow-lg transition-colors duration-200 finder-button"
             >
               Find a Restroom
-            </a>
+            </Link>
           </div>
         </div>
       </div>
     </div>
   );
-} 
+}
